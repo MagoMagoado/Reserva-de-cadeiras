@@ -1,0 +1,166 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+*{
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration:none;
+    background-color: inherit;
+    color: inherit;
+}
+#quadro-assentos{
+    width: fit-content;/*tamanho do form*/
+    background-color: rgba(27, 152, 255, 0.781);
+    padding: 15px;
+    margin: 0px;
+}
+#quadro-assentos #formulario{
+    width: max-content;/*tamanho do conteudo, a linha*/
+    margin: 0px;
+}
+#quadro-assentos #table{
+    width: 450px;
+    height: 355px;
+    border: 1px solid black;
+    padding-top: 55px;
+    margin: 10px 0px 0px 45px;
+    background-color: #fff;
+}
+#quadro-assentos #table-enviar{
+    visibility: hidden;
+    position: absolute;
+    width: 450px;
+    height: 475px;
+    border: 1px solid black;
+    margin: 10px 0px 0px 45px;
+    background-color: #fff;
+}
+#quadro-assentos #table-enviar p{
+    text-align: center;
+    margin-bottom:3px;
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#quadro-assentos #titulo{
+    text-align: center; 
+    margin:0px;
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#quadro-assentos #close{
+    margin-top: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+#quadro-assentos .linha{
+    display: flex;
+    align-items: center;
+    padding: 0px 5px 0px 5px;
+    height: 10vh;
+}
+#quadro-assentos .tit-linha{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(3, 24, 216);
+    margin-right: 25px;
+}
+#quadro-assentos div#numeros{
+    border:1px solid;
+}
+#quadro-assentos #numeros p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(3, 24, 216);
+    margin-right: 25px;
+}
+#quadro-assentos .cedula{
+    position: relative;
+    margin: 0px 10px 0px 10px;
+}
+#quadro-assentos .cedula label{
+    position: absolute;
+    top: 0; left: 0;
+}
+#quadro-assentos .cedula label:hover{
+    cursor: pointer;
+}
+/*Precisa ter sua própria classe para tirar o position*/
+#quadro-assentos .cedula-resp{
+    position: relative;
+    margin: 0px 10px 0px 10px;
+}
+#quadro-assentos .images{
+    display: none;
+}
+#quadro-assentos .images:nth-child(1){
+    display: block;
+}
+#quadro-assentos div#bnt{
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+    padding: 0px; 
+}
+#quadro-assentos div#bnt input{
+    background-color: inherit;
+    font-size: 1.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 1px solid rgb(3, 24, 216);
+    border-radius: 3px;
+    padding: 5px;
+}
+#quadro-assentos div#bnt a{
+    font-size: 1.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px 7px 5px 7px;
+    border: 1px solid rgb(3, 24, 216);
+    border-radius: 3px;
+}
+#quadro-assentos div#bnt a:hover{
+    animation: .2s;
+    background-color: lightcoral;
+}
+#quadro-assentos #myBtn-enviar{
+    position: absolute;
+    top: 90%;
+    cursor: pointer;
+}
+#quadro-assentos div#bnt:hover #myBtn-enviar{
+    animation: .2s;
+    background-color: rgb(6, 19, 136);
+    color: #fff;
+}
+#quadro-assentos .primeira::before{
+content: attr(data-content);
+position: absolute;
+top: -65px; left: 0px; 
+font-size: 2.1rem;
+font-weight: bold;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: rgb(3, 24, 216);
+}
+#quadro-assentos .primeira:last-child::before{
+left: -7px;
+}
+#quadro-assentos .primeira-resp::before{
+    content: attr(data-content);
+    position: absolute;
+    top: -65px; left: 0px; 
+    font-size: 2.1rem;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(3, 24, 216);
+}
+#quadro-assentos .primeira-resp:last-child::before{
+    left: -7px;
+    }

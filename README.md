@@ -1,4 +1,4 @@
 # Sistema de reserva
-Versão simplificada de um sistema para reserva de assentos.
+Sistema para reserva de assentos, 3 exemplos conceituais.
 * Aplicações: php, html e css.
 * Para melhor visualização, confira o repositório "TCC-CinemaGIGA".
