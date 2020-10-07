@@ -1,0 +1,28 @@
+#titulo{
+    text-align: center; 
+    margin-top:10px;
+}
+div.assentos{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+div.assentos table{
+    padding: 20px;
+    background-color: rgb(112, 216, 216,0.5);
+}
+tr td{
+    padding:5px;
+}
+th{
+    font-size: 18pt;
+}
+div#bnt{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    border-style: none;
+    margin-top:20px;
+}
